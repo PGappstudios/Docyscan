@@ -5,71 +5,135 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DocyScan - Your Digital Assistant</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    /* General Reset */
+    * {
       margin: 0;
       padding: 0;
-      background-color: #f3f4f6;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #6a5acd;
-      color: #fff;
-      padding: 20px;
+      background: linear-gradient(90deg, #6a5acd, #836fff);
+      color: white;
       text-align: center;
+      padding: 50px 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    header h1 {
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
     }
     section {
-      padding: 20px;
+      padding: 50px 20px;
       text-align: center;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #6a5acd;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 800px;
+      margin: 0 auto 40px;
+    }
+    ul li {
+      background: #fff;
+      margin: 10px auto;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      font-size: 1rem;
+    }
+    .button {
+      display: inline-block;
+      background: linear-gradient(90deg, #6a5acd, #836fff);
+      color: white;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: #5848c2;
     }
     footer {
       background-color: #6a5acd;
-      color: #fff;
+      color: white;
       text-align: center;
-      padding: 10px;
-      position: fixed;
+      padding: 20px;
+      position: relative;
       bottom: 0;
       width: 100%;
     }
-    .button {
-      background-color: #6a5acd;
-      color: white;
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #ffdd00;
       text-decoration: none;
     }
-    .button:hover {
-      background-color: #5848c2;
+    .download-section {
+      background: #eef2ff;
+      padding: 40px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .download-section p {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+    .hero-image {
+      width: 100px;
+      max-width: 150px;
+      margin: 30px auto 0;
+      display: block;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>DocyScan</h1>
-    <p>Scan Documents, Cards, and Create Notes with Ease</p>
+    <p>Your Digital Assistant for Scanning, Organizing, and Reminding</p>
+    <img src="logo" alt="DocyScan Logo" class="hero-image">
   </header>
 
   <section>
     <h2>Features</h2>
     <ul>
-      <li>Scan and digitize documents.</li>
-      <li>Effortlessly manage business cards.</li>
-      <li>Create personal notes with reminders.</li>
-      <li>Stay organized and productive.</li>
+      <li><strong>Document Scanning:</strong> Digitize your important documents with precision.</li>
+      <li><strong>Business Card Scanning:</strong> Automatically save contact details from business cards.</li>
+      <li><strong>Personal Notes:</strong> Create notes with attachments and reminders to stay organized.</li>
+      <li><strong>Reminders:</strong> Never miss a task or event with scheduled alerts.</li>
     </ul>
     <a href="https://github.com/yourusername/DocyScan" class="button">View on GitHub</a>
   </section>
 
-  <section>
+  <section class="download-section">
     <h2>Download</h2>
-    <p>Available soon on the App Store!</p>
+    <p>Coming soon to the App Store! Stay tuned for the ultimate document and note management experience.</p>
   </section>
 
   <footer>
     <p>© 2025 DocyScan | All Rights Reserved</p>
+    <p>
+      Follow us on <a href="https://x.com/PGmetaStudios" target="_blank">Twitter</a> | Contact: <a href="mailto:pgmetastudios@gmail.com">pgmetastudios@gmail.com</a>
+    </p>
   </footer>
 </body>
 </html>
